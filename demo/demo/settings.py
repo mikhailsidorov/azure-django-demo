@@ -77,11 +77,11 @@ if os.environ.get('ENV') == 'production':
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': os.environ.get('DB_NAME'),
-            'USER': os.environ.get('DB_USER'),
-            'PASSWORD': os.environ.get('DB_PASS'),
-            'HOST': os.environ.get('DB_HOST'),
-            'PORT': os.environ.get('DB_PORT') or '5432',
+            'NAME': os.environ.get('DBNAME'),
+            'USER': os.environ.get('DBUSER'),
+            'PASSWORD': os.environ.get('DBPASS'),
+            'HOST': os.environ.get('DBHOST'),
+            'PORT': os.environ.get('DBPORT') or '5432',
         }
     }
 
