@@ -83,7 +83,7 @@ if os.environ.get('ENV') == 'production':
             'HOST': os.environ.get('DBHOST'),
             'PORT': os.environ.get('DBPORT') or '5432',
             'OPTIONS': {
-                'sslmode': 'true',
+                'sslmode': 'require',
             }
         }
     }
